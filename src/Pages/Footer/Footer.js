@@ -4,7 +4,7 @@ import footerLogo from '../../portfolio-img/portfolioLogo.png';
 
 const Footer = () => {
     return (
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-items-center items-center bg-neutral p-2 '>
+        <div className='w-100 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-items-center items-center bg-neutral p-2 '>
             <div>
                 <img className='w-28 h-28' src={footerLogo} alt="" />
             </div>
