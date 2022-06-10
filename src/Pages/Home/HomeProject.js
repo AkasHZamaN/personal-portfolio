@@ -5,8 +5,8 @@ import alexGymStone from '../../portfolio-img/alex-gym-ston.png';
 
 const HomeProject = () => {
   return (
-    <div className="w-100">
-      <h6 className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-secondary via-rose-500 to-primary uppercase my-4 px-24">
+    <div className="w-4/5 mx-auto">
+      <h6 className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-secondary via-rose-500 to-primary uppercase my-4">
         My Project Portfolio
       </h6>
 
