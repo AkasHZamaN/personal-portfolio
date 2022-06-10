@@ -1,5 +1,6 @@
 import React from "react";
 import picture from "../../portfolio-img/about.png";
+import { AcademicCapIcon, CheckCircleIcon } from '@heroicons/react/solid'
 
 const HomeHero = () => {
   return (
@@ -21,36 +22,39 @@ const HomeHero = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                 <div>
                     <h5 className="text-accent font-bold my-3">Educational Skills</h5>
-                    <p className="text-accent">Leading University, Sylhet</p>
-                    <small className="text-accent">Graduated on CSE</small>
+                    <p className="text-accent flex"><AcademicCapIcon className="w-5 h-5 mr-2"></AcademicCapIcon> Leading University, Sylhet</p>
+                    <small className="text-accent font-semibold ml-7">Graduated on CSE</small>
                 </div>
                 <div>
                     <h5 className="text-accent font-bold my-3">My Strategy</h5>
-                    <p className="text-accent">
-                        1. Aim for a responsive design. <br />
-                        2. Gather a good team. <br />
-                        3. Always test and validate your projects. 
-                    </p>
+                    <ul className="text-accent">
+                      <li className="flex"><CheckCircleIcon className="w-5 h-5 mr-2"></CheckCircleIcon> Aim for a responsive design.</li>
+                      <li className="flex"><CheckCircleIcon className="w-5 h-5 mr-2"></CheckCircleIcon> Gather a good team.</li>
+                      <li className="flex"><CheckCircleIcon className="w-5 h-5 mr-2"></CheckCircleIcon> Always test and validate your projects.</li>
+                    </ul>
                 </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                 <div>
                     <h5 className="text-accent font-bold my-3">Development Skills</h5>
-                    <p className="text-accent"> 
-                        1. HTML/CSS skills. <br />
-                        2. Responsive design skills. <br />
-                        3. JavaScript skills.<br />
-                        4. React Js. <br />
-                        5. Testing and debugging skills. <br />
-                        6. Back-end basics. <br /></p>
+                    <ul className="text-accent">
+                      <li className="flex"><CheckCircleIcon className="w-5 h-5 mr-2"></CheckCircleIcon> HTML/CSS skills.</li>
+                      <li className="flex"><CheckCircleIcon className="w-5 h-5 mr-2"></CheckCircleIcon> Responsive design skills.</li>
+                      <li className="flex"><CheckCircleIcon className="w-5 h-5 mr-2"></CheckCircleIcon> JavaScript skills.</li>
+                      <li className="flex"><CheckCircleIcon className="w-5 h-5 mr-2"></CheckCircleIcon> React Js.</li>
+                      <li className="flex"><CheckCircleIcon className="w-5 h-5 mr-2"></CheckCircleIcon> Testing and debugging skills.</li>
+                      <li className="flex"><CheckCircleIcon className="w-5 h-5 mr-2"></CheckCircleIcon> Back-end basics.</li>
+                    </ul>
+                    
                 </div>
                 <div>
                     <h5 className="text-accent font-bold my-3">My Quality</h5>
-                    <p className="text-accent">
-                        1. Requirement testing <br />
-                        2. Design evaluation <br />
-                        3. Functionality testing <br />
-                    </p>
+                    <ul className="text-accent">
+                      <li className="flex"><CheckCircleIcon className="w-5 h-5 mr-2"></CheckCircleIcon> Requirement testing.</li>
+                      <li className="flex"><CheckCircleIcon className="w-5 h-5 mr-2"></CheckCircleIcon> Design evaluation.</li>
+                      <li className="flex"><CheckCircleIcon className="w-5 h-5 mr-2"></CheckCircleIcon> Functionality testing.</li>
+                    </ul>
+                    
                 </div>
             </div>
           </div>

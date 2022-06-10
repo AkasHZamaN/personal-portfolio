@@ -1,27 +1,27 @@
 import { MailIcon, PhoneIcon } from "@heroicons/react/solid";
 import React from "react";
-import contactPhoto from '../../portfolio-img/About-Contact-F.png';
 
-const ContactForm = () => {
+const PurchaseModal = () => {
   return (
-    <div className="w-100 mx-auto">
-      <div className="hero min-h-screen">
-        <div className="hero-content flex-col lg:flex-row-reverse">
-          <div className="text-center lg:text-left">
-            <img className="w-100 mx-auto" src={contactPhoto} alt="" />
+    <div>
+      <input type="checkbox" id="purchase-modal" class="modal-toggle" />
+      <div class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box">
+        <div class="modal-action m-0">
+            <label for="purchase-modal" className="btn btn-primary btn-sm">
+              X
+            </label>
           </div>
-          <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-            <div className="card-body">
-              <div className="form-control">
+          <div className="form-control">
                   <h6 className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-secondary via-rose-500 to-primary">Let's Say Hi</h6>
                   <h1 className="text-4xl font-bold text-accent">Hire Me!</h1>
+
                   <p className="mt-4"><small className="text-primary flex"><PhoneIcon className="w-5 h-5 mr-4"></PhoneIcon><span className="text-accent font-bold">+8801725421914</span></small></p>
 
                   <p className="mb-4"><small className="text-primary flex"><MailIcon className="w-5 h-5 mr-4"></MailIcon> <span className="text-accent font-bold">kawseruzzaman05@gmail.com</span></small></p>
               </div>
-                
-              
-              <form action="https://formsubmit.co/b1b93d1ec43ef89f27f9490d02c3f0a4" method="POST">
+          
+        <form action="https://formsubmit.co/b1b93d1ec43ef89f27f9490d02c3f0a4" method="POST">
               <div className="form-control">
               <label className="label">
                   <span className="label-text">Name</span>
@@ -48,17 +48,16 @@ const ContactForm = () => {
                 <textarea className="textarea input input-bordered" name="message" placeholder="Your Text Message"></textarea>
                 
                 <div className="form-control mt-6">
-                  <button type="submit" className="btn btn-primary text-white">Send Text</button>
+                  <button type="submit" className="btn btn-primary text-white">Purchase!</button>
                 </div>
               </div>
               </form>
-              
-            </div>
-          </div>
+
+          
         </div>
       </div>
     </div>
   );
 };
 
-export default ContactForm;
+export default PurchaseModal;

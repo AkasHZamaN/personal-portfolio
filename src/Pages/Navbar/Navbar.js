@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import portLogo from '../../portfolio-img/portLogo.png';
+import avatar from '../../portfolio-img/avatar.png';
+import Profile from "./Profile";
 
 const Navbar = () => {
   const menuItems = (
@@ -24,8 +26,8 @@ const Navbar = () => {
         <Link to={"/contact"}>CONTACT</Link>
       </li>
       <li>
-      <a href="https://drive.google.com/file/d/11UVY6uHlyoR-iv1SqY5XoQcbvnn5F-_z/view?usp=sharing">
-            <button className="uppercase">Download Resume</button>
+      <a className="border-2 border-slate-300" href="https://drive.google.com/file/d/11UVY6uHlyoR-iv1SqY5XoQcbvnn5F-_z/view?usp=sharing">
+            <button className="uppercase rounded-full">Download Resume</button>
             </a>
       </li>
     </>
@@ -59,18 +61,19 @@ const Navbar = () => {
             </ul>
           </div>
           <Link to={"#"} className="text-xl text-white">
-            <img className="w-16 h-16" src={portLogo} alt="" />
+            <img className="w-15 h-16" src={portLogo} alt="" />
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal p-0 text-white">{menuItems}</ul>
         </div>
+
         <div className="navbar-end">
           <div className="dropdown dropdown-end">
             <label tabIndex="1" className="btn btn-ghost btn-circle avatar">
               <div className="w-10 rounded-full">
                 <img
-                  src="https://api.lorem.space/image/face?hash=33791"
+                  src={avatar}
                   alt=""
                 />
               </div>
@@ -80,7 +83,7 @@ const Navbar = () => {
               className="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52"
             >
               <li>
-                <Link to={"#"}>Profile</Link>
+                <label htmlFor="profile-modal">Profile</label>
               </li>
               <li>
                 <Link to={"#"}>Settings</Link>
@@ -92,6 +95,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+      <Profile></Profile>
     </div>
   );
 };
