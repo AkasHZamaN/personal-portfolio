@@ -6,19 +6,27 @@ const Navbar = () => {
   const menuItems = (
     <>
       <li>
-        <Link to={"/"}>Home</Link>
+        <Link to={"/"}>HOME</Link>
       </li>
       <li>
-        <Link to={"/"}>Service</Link>
+        <Link to={"/service"}>SERVICE</Link>
       </li>
       <li>
-        <Link to={"/"}>About</Link>
+        <Link to={"/blog"}>BLOGS</Link>
       </li>
       <li>
-        <Link to={"/"}>My Project</Link>
+        <Link to={"/about"}>ABOUT</Link>
       </li>
       <li>
-        <Link to={"/"}>Contact</Link>
+        <Link to={"/project"}>MY PROJECTS</Link>
+      </li>
+      <li>
+        <Link to={"/contact"}>CONTACT</Link>
+      </li>
+      <li>
+      <a href="https://drive.google.com/file/d/11UVY6uHlyoR-iv1SqY5XoQcbvnn5F-_z/view?usp=sharing">
+            <button className="uppercase">Download Resume</button>
+            </a>
       </li>
     </>
   );

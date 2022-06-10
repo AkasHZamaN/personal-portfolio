@@ -2,6 +2,7 @@ import React from "react";
 import superBycycle from '../../portfolio-img/Super-Bike.png';
 import groceryFarm from '../../portfolio-img/grocery-farm.png';
 import alexGymStone from '../../portfolio-img/alex-gym-ston.png';
+import { Link } from "react-router-dom";
 
 const HomeProject = () => {
   return (
@@ -30,7 +31,9 @@ const HomeProject = () => {
         <div className="card-body mt-12">
           <h2 className="card-title text-white justify-end">Super By Cycle Parts Shop</h2>
           <div className="card-actions justify-end">
+            <Link to={'/details'}>
             <button className="btn btn-primary text-white">Details</button>
+            </Link>
           </div>
         </div>
       </div>
@@ -44,7 +47,9 @@ const HomeProject = () => {
         <div className="card-body mt-12">
           <h2 className="card-title text-white justify-end">Grocery & Organic Food </h2>
           <div className="card-actions justify-end">
+            <Link to={'/grocery'}>
             <button className="btn btn-primary text-white">Details</button>
+            </Link>
           </div>
         </div>
       </div>
@@ -58,7 +63,9 @@ const HomeProject = () => {
         <div className="card-body mt-12">
           <h2 className="card-title text-white justify-end">Alex Gym Stone</h2>
           <div className="card-actions justify-end">
+            <Link to={'/gym'}>
             <button className="btn btn-primary text-white">Details</button>
+            </Link>
           </div>
         </div>
       </div>
