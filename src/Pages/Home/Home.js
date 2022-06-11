@@ -8,7 +8,7 @@ import Purchase from './Purchase';
 
 const Home = () => {
     return (
-        <div>
+        <div className='w-full mx-auto overflow-hidden'>
             <HomeBanner></HomeBanner>
             <HomeHero></HomeHero>
             <HomeLogos></HomeLogos>
