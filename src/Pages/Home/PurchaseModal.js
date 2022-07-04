@@ -4,11 +4,11 @@ import React from "react";
 const PurchaseModal = () => {
   return (
     <div>
-      <input type="checkbox" id="purchase-modal" class="modal-toggle" />
-      <div class="modal modal-bottom sm:modal-middle">
-        <div class="modal-box">
-        <div class="modal-action m-0">
-            <label for="purchase-modal" className="btn btn-primary btn-sm">
+      <input type="checkbox" id="purchase-modal" className="modal-toggle" />
+      <div className="modal modal-bottom sm:modal-middle">
+        <div className="modal-box">
+        <div className="modal-action m-0">
+            <label htmlFor="purchase-modal" className="btn btn-primary btn-sm">
               X
             </label>
           </div>

@@ -26,8 +26,8 @@ const Navbar = () => {
         <Link to={"/contact"}>CONTACT</Link>
       </li>
       <li>
-      <a className="border-2 border-slate-300" href="https://drive.google.com/file/d/11UVY6uHlyoR-iv1SqY5XoQcbvnn5F-_z/view?usp=sharing">
-            <button className="uppercase rounded-full">Download Resume</button>
+      <a className="border-2 border-y-orange-300 " href="https://drive.google.com/file/d/11UVY6uHlyoR-iv1SqY5XoQcbvnn5F-_z/view?usp=sharing">
+            <button className="uppercase rounded-full text-orange-300">Download Resume</button>
             </a>
       </li>
     </>

@@ -8,16 +8,16 @@ import PurchaseModal from "../Home/PurchaseModal";
 const Profile = () => {
   return (
     <div>
-      <input type="checkbox" id="profile-modal" class="modal-toggle" />
-      <div class="modal modal-bottom sm:modal-middle">
-        <div class="modal-box">
+      <input type="checkbox" id="profile-modal" className="modal-toggle" />
+      <div className="modal modal-bottom sm:modal-middle">
+        <div className="modal-box">
           <div className="flex justify-between items-center">
-          <h3 class="font-bold text-lg text-accent">
+          <h3 className="font-bold text-lg text-accent">
             Md. Kawser Uzzaman
           </h3>
           <img className="w-20 h-20" src={profile} alt="" />
           </div>
-          <p class="py-4 text-primary">
+          <p className="py-4 text-primary">
           “It's hard enough to find an error in your code when you're looking for it; it's even harder when you've assumed your code is error-free.” - Steve McConnell
           </p>
 
@@ -35,14 +35,14 @@ const Profile = () => {
                 </li>
             </ul>
           
-          <div class="modal-action flex justify-between items-center mt-12">
+          <div className="modal-action flex justify-between items-center mt-12">
           <div className='text-white flex'>
                 <a href='https://www.facebook.com/akash.zaman.18400'><img className='w-6 h-6 mr-2 rounded-full' src={facebook} alt="" /></a>
                 <a href='https://github.com/AkasHZamaN'><img className='w-6 h-6 mr-2 rounded-full' src={github} alt="" /></a>
                 <a href='https://www.linkedin.com/in/md-kawser-uzzaman-4586ba230/'><img className='w-6 h-6 mr-2 rounded-full' src={linkedin} alt="" /></a>
             </div>
-            <label for="profile-modal" class="btn btn-xs btn-primary">
-              Closed!
+            <label htmlFor="profile-modal" className="btn btn-xs btn-primary uppercase font-bold">
+              X
             </label>
           </div>
         </div>

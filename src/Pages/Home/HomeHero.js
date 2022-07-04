@@ -14,11 +14,12 @@ const HomeHero = () => {
             </h6>
             <h1 className="text-5xl font-bold text-accent">My About</h1>
             <p className="py-6 text-accent">
-            Assalamu alaikum, I'm Kawser Uzzaman Akash. I live in Sylhet. I complete my graduation on Computer Science & Engineering at Leading University, Sylhet. Now, I'm Prepare to work for any software agency.
+            Assalamu alaikum, I'm Kawser Uzzaman. I live in Sylhet. I complete my graduation on Computer Science & Engineering at Leading University, Sylhet. Now, I'm Prepare to work for any software agency.
             <br />
 
             I knew that MERN Stack Web Development. I have completed web development course where I learn some programming language such as React, JavaScript, Node, Express, MongoDB etc.
             </p>
+
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                 <div>
                     <h5 className="text-accent font-bold my-3">Educational Skills</h5>
